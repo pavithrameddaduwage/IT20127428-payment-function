@@ -89,8 +89,8 @@ public class pay {
 			 output += "<td>" + paymenttype + "</td>"; 
 			 output += "<td>" + Date + "</td>"; 
 			 // buttons
-	 output += "<td><input name='.btnUpdate'type='button' value='Update'class='btnUpdate btn btn-warning' data-paymentid='"+paymentID+"'>"
-			 + "<td><input name='.btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-paymentid='"+ paymentID + " '>" + "</td></tr>";
+	 output += "<td><input name='btnUpdate'type='button' value='Update'class='btnUpdate btn btn-warning' data-paymentid='"+paymentID+"'>"
+			 + "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-paymentid='"+paymentID+"'>" + "</td></tr>";
 			 } 
 	 con.close(); 
 	 // Complete the 

@@ -82,7 +82,7 @@ $("#hidpaymentIDSave").val($(this).data("paymentid"));
  { 
  url : "paymentAPI", 
  type : "DELETE", 
- data : "paymentID" + $(this).data("paymentid"),
+ data : "paymentID=" + $(this).data("paymentid"),
  dataType : "text", 
  complete : function(response, status) 
  { 
