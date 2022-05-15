@@ -36,8 +36,7 @@
  <input id="Date" name="Date" placeholder="MM/DD/YYY" type="date" 
  class="form-control form-control-sm">
  <br>
- <input id="btnSave" name="btnSave" type="button" value="Save" 
- class="btn btn-primary">
+ <input id="btnSave" name="btnSave" type="button" value="Save" class="btn btn-primary">
  <input type="hidden" id="hidpaymentIDSave"name="hidpaymentIDSave" value="">
 </form>
  

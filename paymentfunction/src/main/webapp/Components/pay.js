@@ -120,24 +120,24 @@ if (status == "success")
 // CLIENT-MODEL================================================================
 function validateItemForm() 
 { 
-// CODE
+// userID
 if ($("#userID").val().trim() == "") 
  { 
  return "Insert User ID."; 
  } 
-// NAME
+// Amount
 if ($("#Amount").val().trim() == "") 
  { 
  return "Insert the Total Payment ."; 
  } 
  
-// PRICE-------------------------------
+// payment type
 if ($("#paymenttype").val().trim() == "") 
  { 
  return "Insert Payment Type."; 
  } 
  
-// DESCRIPTION------------------------
+//  date
 if ($("#Date").val().trim() == "") 
  { 
  return "Insert the Date of Payment."; 
