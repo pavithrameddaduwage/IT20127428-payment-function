@@ -49,7 +49,7 @@ public class pay {
 	 catch (Exception e) 
 	 
 		 { 
-		 output = "{\"status\":\"error\", \"data\":\"Error while inserting the item.\"}"; 
+		 output = "{\"status\":\"error\", \"data\":\"Error while inserting the payment data.\"}"; 
 		 System.err.println(e.getMessage()); 
 		 } 
 
@@ -98,7 +98,7 @@ public class pay {
 	 } 
 	 catch (Exception e) 
 	 { 
-	 output = "Error while reading the items."; 
+	 output = "Error while reading the data."; 
 	 System.err.println(e.getMessage()); 
 	 } 
 	 return output; 
@@ -130,7 +130,7 @@ public class pay {
 		 } 
 		 catch (Exception e) 
 		 { 
-			 output = "{\"status\":\"error\", \"data\":\"Error while updating the item.\"}"; 
+			 output = "{\"status\":\"error\", \"data\":\"Error while updating the payment data.\"}"; 
 					 System.err.println(e.getMessage()); 
 
 		 } 
@@ -158,7 +158,7 @@ public class pay {
 		 } 
 		 catch (Exception e) 
 		 { 
-			 output = "{\"status\":\"error\", \"data\": \"Error while deleting the item.\"}"; 
+			 output = "{\"status\":\"error\", \"data\": \"Error while deleting the data.\"}"; 
   
 		 System.err.println(e.getMessage()); 
 		 } 

@@ -14,13 +14,14 @@
 </head>
 <body>
 <div class="container"><div class="row"><div class="col-6"> 
+
 <h1>Payment Details Form</h1>
 <br>
 <div id="alertSuccess" class="alert alert-success"></div>
 <div id="alertError" class="alert alert-danger"></div>
 
  
-
+ 
 <form id="formItem" name="formItem">
  User ID
  <input id="userID" name="userID" type="text" 
