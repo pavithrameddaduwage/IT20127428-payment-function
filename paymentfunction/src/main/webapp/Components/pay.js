@@ -76,12 +76,12 @@ $("#hidpaymentIDSave").val($(this).data("paymentid"));
  $("#Date").val($(this).closest("tr").find('td:eq(3)').text()); 
 });
  // DELETE==========================================
- $(document).on("click", "btnRemove", function(event) 
+ $(document).on("click", ".btnRemove", function(event) 
 { 
  $.ajax( 
  { 
  url : "paymentAPI", 
- type : "DELETE ", 
+ type : "DELETE", 
  data : "paymentID" + $(this).data("paymentid"),
  dataType : "text", 
  complete : function(response, status) 
@@ -89,6 +89,7 @@ $("#hidpaymentIDSave").val($(this).data("paymentid"));
  onItemDeleteComplete(response.responseText, status); 
  } 
  }); 
+ });
  function onItemDeleteComplete(response, status) 
 { 
 if (status == "success") 
@@ -114,8 +115,7 @@ if (status == "success")
  $("#alertError").show(); 
  } 
 }
-});
-
+ 
  
 // CLIENT-MODEL================================================================
 function validateItemForm() 

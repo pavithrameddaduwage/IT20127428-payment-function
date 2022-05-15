@@ -32,7 +32,7 @@
  <input id="paymenttype" name="paymenttype" type="text" 
  class="form-control form-control-sm">
  <br> Date 
- <input id="Date" name="Date" placeholder="MM/DD/YYY"type="date" 
+ <input id="Date" name="Date" placeholder="MM/DD/YYY" type="date" 
  class="form-control form-control-sm">
  <br>
  <input id="btnSave" name="btnSave" type="button" value="Save" 

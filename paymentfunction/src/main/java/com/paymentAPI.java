@@ -64,6 +64,13 @@ public class paymentAPI extends HttpServlet {
 	
 	}
 
+	 
+	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Map paras = getParasMap(request); 
+		 String output = itemObj.deleteItem(paras.get("paymentID").toString());
+		 System.out.println(paras.get("paymentID").toString());
+		response.getWriter().write(output); 
+	}
 	private Map getParasMap(HttpServletRequest request) {
 		Map<String, String> map = new HashMap<String, String>(); 
 		try
@@ -83,13 +90,6 @@ public class paymentAPI extends HttpServlet {
 		 { 
 		 } 
 		return map; 
-	}
-
-	 
-	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Map paras = getParasMap(request); 
-		 String output = itemObj.deleteItem(paras.get("paymentID").toString()); 
-		response.getWriter().write(output); 
 	}
 
 }

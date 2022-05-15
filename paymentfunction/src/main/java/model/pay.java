@@ -69,7 +69,7 @@ public class pay {
 	 output = "<table border='1'><tr><th>User ID</th><th>Amount</th>" +
 	 "<th>Payment Type</th>" + 
 	 "<th>Date</th>" +
-	 "<th>Update</th><th>Remove</th></tr>"; 
+	 "<th>Update</th><th>Delete</th></tr>"; 
 	 
 	 String query = "select * from payment"; 
 	 Statement stmt = con.createStatement(); 
@@ -90,7 +90,7 @@ public class pay {
 			 output += "<td>" + Date + "</td>"; 
 			 // buttons
 	 output += "<td><input name='.btnUpdate'type='button' value='Update'class='btnUpdate btn btn-warning' data-paymentid='"+paymentID+"'>"
-			+ "</td><td> <input name='btnRemove' type='button' value='Remove' class='btn btn-danger'data-paymentid='"+paymentID+"'></td></tr>"; 
+			 + "<td><input name='.btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-paymentid='"+ paymentID + " '>" + "</td></tr>";
 			 } 
 	 con.close(); 
 	 // Complete the 
